@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--FORMULARIO. El ATRIBUTO enctype es "text/plain" porque es un formulario que no tendrá validación, 
+        será texto plano. Con esto le decimos al navegador: no codfiques anda!-->
+
+
+<form action="#" method="get" enctype="text/plain"">
+    <fieldset>
+            <legend> <strong>Información personal y de contacto</strong></legend>
+                <div>
+                    <label for="name"><strong>Nombre y apellido</strong></label>
+                    <input type="text" name="name" id="name" required placeholder="Introduzca su nonbre">
+                </div>
+                <div>
+                    <label for="email"><strong>Email</strong></label>
+                    <input type="email" name="email" id="email" required placeholder="introduzca su e-mail">
+                </div>
+                <div>
+                    <label for="phone"><strong>Teléfono</strong></label>
+                    <input type="phone" name="Phone" id="phone" required placeholder="Introduzca su número de celular">
+                </div>
+                <div>
+                    <label for="date"><strong>Fecha de Nacimiento</strong></label>
+                    <input type="date" name="date" id="date" required min="1900-01-01">
+                </div>
+                <div>
+                    <label for="age"><strong>Edad</strong></label>
+                    <input type="number" name="age" id="age" min="1" max="10">
+                </div>
+                <div>
+                    <label for="color"><strong>Color</strong></label>
+                    <input type="color" name="color" id="color" required>
+                </div>
+    </fieldset>
+    <fieldset>
+            <legend><strong>Preferencias</strong></legend>
+                <div>        
+                    <strong>Fruta Preferida</strong>
+                </div>
+                <div>
+                    <label for="Banana">Banana</label>
+                    <input type="checkbox" name="Banana" id="banana">
+                </div>
+    <div>
+        <label for="Manzana">Manzana</label>
+        <input type="checkbox" name="Manzana" id="Manzana">
+    </div>
+    <div>
+        <label for="Pera">Pera</label>
+        <input type="checkbox" name="Pera" id="Pera">
+    </div>
+    <p></p>
+    <div>
+        <strong>Genero</strong>
+    </div>
+    <div>
+
+        <!-- EN NAME, CUANDO ESTEMOS PREGUNTARNDO GENERO, SE DEBE COLOTAR "gener"-->
+        <!-- Y TAMBIE NSE DEBE PONER > value="lo mismo que for" que es el que viaja al a base de datos-->
+
+        <label for="Male">Masculino</label>
+        <input type="radio" name="gender" id="Male" value="male">
+    </div>
+    <div>
+        <label for="Female">Femenino</label>
+        <input type="radio" name="gender" id="Female" value="female">
+    </div>
+    <div>
+        <label for="other">Otro</label>
+        <input type="radio" name="gender" id="other" value="other">
+    </div>
+    <p></p>
+    <div>
+        <label for="eyecolor"><strong>Color de Ojos</strong></label>
+        <div>
+            <select name="eyecolor" id="eyecolor" multiple>
+                <option value="Marrones" label="Marrones"></option>
+                <option value="Verdes" label="Verdes"></option>
+                <option value="Azules" label="Azules"></option>
+                <option value="Negros" label="Negros"></option>
+            </select>
+        </div>
+
+    <!---OTRA FORMA DE HACERLO SI USASR multiple-->
+        <p></p>
+        <div>
+            <label for="eyecolor"><strong>Color de Ojos</strong></label>
+            <div>
+                <select name="eyecolor" id="eyecolor" >
+                    <option value="Marrones" label="Marrones"></option>
+                    <option value="Verdes" label="Verdes"></option>
+                    <option value="Azules" label="Azules"></option>
+                    <option value="Negros" label="Negros"></option>
+                </select>
+            </div>
+      </fieldset> 
+      <fieldset>
+        <legend><strong>Otra Información</strong></legend>
+            <div>
+                <label for="Bio"><strong>Bio</strong></label>
+            </div> 
+        <div>
+                <textarea name="Bio" id="bio"></textarea>
+        </div>
+        <p></p>
+        <div>    
+                <label for="file"><strong>Subir Archivo</strong></label>
+                <input type="file" name="file" id="file" requered>
+                <label for="URL"><strong>URL</strong></label>
+                <input type="URL" name="url" id="url">
+        </div>
+        <p></p>
+        <div>
+                <label for="user"><strong>Nombre de Usuario</strong></label>
+                <input type="user" name="user" id="user" required min="8" max="15">
+        </div>
+        <div>
+                <label for="password"><strong>Contraseña</strong></label>
+                <input type="password" name="password" id="password" required min="8">
+        </div>
+      </fieldset>
+      <p></p>
+        <div>
+                <input type="reset" value="Reiniciar Formulario"></input>
+                <input type="Submit" value="Enviar Formulario"></input>
+        </div>   
+</form>    
+</body>
+</html>

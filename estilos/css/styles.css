@@ -1,0 +1,381 @@
+/*
+font-family: 'Inter', sans-serif;
+font-family: 'Markazi Text', serif;
+*/
+
+
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+   font-size: 16px; 
+}
+
+/*CLASES UTILITITARIAS*/
+
+.btn{
+    background-color: white;
+    padding: 1rem;
+    display: inline-block;
+    margin-top: 1rem;
+    text-decoration: none;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    color: black; 
+}
+
+p{
+    font-family: 'Inter', sans-serif;
+}
+
+.pulsate-bck {
+	-webkit-animation: pulsate-bck 0.5s ease-in-out infinite both;
+	        animation: pulsate-bck 0.5s ease-in-out infinite both;
+}
+
+/*
+ * ----------------------------------------
+ * ANMIACIONES
+ * ----------------------------------------
+ */
+ @-webkit-keyframes pulsate-bck {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(0.9);
+              transform: scale(0.9);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes pulsate-bck {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(0.9);
+              transform: scale(0.9);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  
+
+/* FIN CLASES UTILITITARIAS*/
+
+.header {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 0.5rem;
+}
+
+.header--gradiente{
+    background-image: url("../../img/fondo_hero.jpg");
+    background: -moz-radial-gradient(circle, rgba(51,75,35,0.3253676470588235) 45%, rgba(229,114,0,1) 73%);
+    background: -webkit-radial-gradient(circle, rgba(51,75,35,0.3253676470588235) 45%, rgba(229,114,0,1) 73%);
+    background: radial-gradient(circle, rgba(51,75,35,0.3253676470588235) 45%, rgba(229,114,0,1) 73%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#334b23",endColorstr="#e57200",GradientType=1);
+}
+
+
+
+.header__logo {
+    max-width: 250px;
+    filter: invert(1);
+}
+
+.header__item {
+    display: inline-block;
+    padding: 5px 0.1rem;
+    border-bottom: solid 2px white;
+}
+
+.header__anchor {
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+}
+
+.header__anchor--activo {
+    color: yellow;
+}
+
+.header--nosotros{
+    background-color: yellowgreen;
+}
+
+
+/*HERO */
+
+.hero {
+    background-image: url("../../img/fondo_hero.jpg");
+    background-position: center bottom;
+    color: white;
+    font-size: 1rem;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2rem 1rem;
+}
+
+.hero__heading{
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 2.9rem;
+}
+
+
+.hero__slogan{
+    font-size: 1.5rem;
+}
+
+/*HERO FIN */
+
+/*INFO SECTION*/
+
+.info {
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    overflow: hidden; 
+}
+
+.infocard {
+    color: white;
+    background-color: black;
+    padding: 1rem 2rem;
+    position: relative;
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.infocard__img{
+   width: 100%;
+}
+
+.infocard__titulo {
+    position: absolute;
+    top: 2rem;
+    right: 3rem;
+    background: black;
+    padding: 0.4rem 0.8rem;
+}
+
+.infocard__desc {
+    margin-top: 1rem;
+}
+
+/*INFO FIN */
+
+/* VIDEO */
+
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    height: 40vh;
+    overflow: hidden;
+}
+
+.video__titulo {
+    position: absolute;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 2rem;
+}
+
+#background-video {
+    width: 100%;
+}
+
+/* VIDEO FIN*/
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.footer__list{
+    display: flex;
+    list-style: none;
+    color: white;
+    list-style: none; 
+}
+
+.footer__item{ 
+    margin: 1rem;
+}
+
+.footer__anchor{
+    color: white; 
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+}
+
+/*NOSOTROS*/
+
+.block {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 2rem;
+    gap: 1rem; 
+}
+
+.block__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-family: 'Inter', sans-serif;
+
+}
+
+.block__heading{
+    text-align: center;
+}
+
+.member {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1.8rem;
+    background-color: cadetblue;
+}
+
+.member__title{
+    font-family: 'Inter', sans-serif;
+
+}
+
+.member__img{
+    width: 100%;
+}
+
+
+/* GALERIA */
+
+
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-auto-flow: dense; 
+    gap: 1rem; 
+}
+
+.galeria > div > img {
+    height: 100%;
+    width: 100%; 
+    object-fit: cover;
+
+}
+
+.vertical{
+    grid-row: span 2; 
+}
+
+
+.horizontal{
+    grid-column: span 2;
+}
+
+.gigante{
+    grid-row: span 2; 
+    grid-column: span 2;
+}
+
+
+
+/* GALERIA FIN*/
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 768px) {
+    .galeria{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/*HASTA 320px */
+@media screen and (max-width: 320px) {
+    .header{
+        flex-direction: column;
+    }
+
+    .header__list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info{
+        flex-direction: column;
+    }
+
+    .hero__heading {
+        font-size: 2.2rem;
+        text-align: center;
+    }
+
+    .hero__slogan{
+        text-align: center;
+    }
+
+    .hero__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .block{
+        grid-template-columns: 1fr;
+        padding: 0px;
+    }
+
+    .block__wrapper{
+        padding: 1rem; 
+        margin-top: 1rem;
+    }
+
+    .galeria{
+        grid-template-columns: 1fr;
+    }
+    .vertical, .movil{
+        grid-column: span 2;
+    }
+}
+

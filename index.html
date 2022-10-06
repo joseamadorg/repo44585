@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INDEX</title>
+    <!-- <script src="https://kit.fontawesome.com/e6eee1a6cb.js" crossorigin="anonymous"></script> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Markazi+Text&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!--ANTES DEL CIERRE DEL HEAD -->
+    <link rel="stylesheet" href="./estilos/css/styles.css">
+</head>
+<body>
+    <header class="header header--gradiente">
+        <a href="#"><img src="./img/logo.png" alt="LOGO EMPRESA" class="header__logo"></a>
+        <nav class="header__nav">
+            <ul class="header__list">
+                <li class="header__item"><i class="fa-solid fa-folder"></i><a class="header__anchor" href="./vistas/nosotros.html">Nosotros</a></li>
+                <li class="header__item"><a class="header__anchor" href="./vistas/propuesta.html">Propuesta</a></li>
+                <li class="header__item"><a class="header__anchor" href="./vistas/proyectos.html">Proyectos</a></li>
+                <li class="header__item"><a class="header__anchor" href="./vistas/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero"> <!-- BLOQUE -->
+            <div class="hero__wrapper">
+                <h1 class="hero__heading">BIENVENIDOS A RELATIVITY</h1> <!--ELEMENTO-->
+                <p class="hero__slogan">Somos la escuela del futuro</p>
+                <a class="btn" href="./vistas/propuesta.html">CONOZCA</a>
+            </div>
+        </section>
+        <section class="info">
+            <div class="infocard"  data-aos="fade-left" data-aos-delay="300">
+                <img class="infocard__img"src="./img/space-1.jpg" alt="">
+                <h2 class="infocard__titulo">Info 1</h2>
+                <p class="infocard__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni necessitatibus, accusamus maxime reiciendis nam quod eum iste numquam sit sapiente, voluptate architecto corporis. Non eligendi deserunt accusantium voluptatum, omnis saepe, reiciendis consequatur suscipit in ad delectus? Officia harum praesentium illo?</p>
+                <a class="btn" href="">Propuesta</a>
+            </div>
+            <div class="infocard" data-aos="fade-left" data-aos-delay="300">
+                <img class="infocard__img"src="./img/space-1.jpg" alt="">
+                <h2 class="infocard__titulo">Info 2</h2>
+                <p class="infocard__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni necessitatibus, accusamus maxime reiciendis nam quod eum iste numquam sit sapiente, voluptate architecto corporis. Non eligendi deserunt accusantium voluptatum, omnis saepe, reiciendis consequatur suscipit in ad delectus? Officia harum praesentium illo?</p>
+                <a class="btn" href="">Propuesta</a>
+            </div>
+            <div class="infocard" data-aos="fade-left" data-aos-delay="300">
+                <img class="infocard__img"src="./img/space-1.jpg" alt="">
+                <h2 class="infocard__titulo">Info 3</h2>
+                <p class="infocard__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni necessitatibus, accusamus maxime reiciendis nam quod eum iste numquam sit sapiente, voluptate architecto corporis. Non eligendi deserunt accusantium voluptatum, omnis saepe, reiciendis consequatur suscipit in ad delectus? Officia harum praesentium illo?</p>
+                <a class="btn" href="">Propuesta</a>
+            </div>
+        </section>
+    </main>
+    <section class="video">
+        <h3 class="video__titulo">¡HAGAMOS FLUIR LAS IDEAS!</h3>
+        <video id="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
+        <source src="https://assets.codepen.io/6093409/river.mp4" type="video/mp4">
+        </video>
+    </section>
+    <footer class="footer">
+        <nav class="footer__nav">
+            <ul class="footer__list">
+                <li class="footer__item"><a class="footer__anchor" href="./vistas/proyectos.html">Proyectos</a></li>
+                <li class="footer__item"><a class="footer__anchor" href="./vistas/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </footer>
+    <!--AOS-->
+    <script>
+        AOS.init();
+      </script>
+</body>
+</html>
