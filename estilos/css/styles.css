@@ -74,7 +74,7 @@ p{
 /* FIN CLASES UTILITITARIAS*/
 
 .header {
-    background-color: black;
+    background-color: tomato;
     display: flex;
     align-items: center;
     justify-content: space-between;
