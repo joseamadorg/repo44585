@@ -8,8 +8,8 @@ font-family: 'Markazi Text', serif;
     margin: 0; 
     padding: 0;
     box-sizing: border-box;
-}
 
+}
 :root{
    font-size: 20px; 
 }
@@ -93,7 +93,7 @@ p{
 
 
 .header__logo {
-    max-width: 250px;
+    max-width: 350px;
     filter: invert(1);
 }
 
