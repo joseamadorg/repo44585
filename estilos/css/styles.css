@@ -10,6 +10,10 @@ font-family: 'Markazi Text', serif;
     box-sizing: border-box;
 
 }
+
+html{
+    scroll-behavior: smooth;
+}
 :root{
    font-size: 20px; 
 }
@@ -27,6 +31,12 @@ font-family: 'Markazi Text', serif;
     color: black; 
 }
 
+.btn:hover{
+    background-color: blueviolet;
+}
+
+
+
 p{
     font-family: 'Inter', sans-serif;
 }
@@ -35,6 +45,8 @@ p{
 	-webkit-animation: pulsate-bck 0.5s ease-in-out infinite both;
 	        animation: pulsate-bck 0.5s ease-in-out infinite both;
 }
+
+
 
 /*
  * ----------------------------------------
@@ -69,12 +81,33 @@ p{
               transform: scale(1);
     }
   }
-  
 
+
+  .carousel--alto{
+    height: 40vh;
+  }
+  
+.carousel--img{
+    height: 40vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+.info__prop{
+    background-color: black;
+    color: white; 
+    font-family: 'Inter', sans-serif;
+    padding: 1rem;
+}
+
+.container-general{
+    max-width: 1390px;
+    margin: auto;
+}
 /* FIN CLASES UTILITITARIAS*/
 
 .header {
-    background-color: black;
+    background-color: grey;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -323,11 +356,26 @@ p{
 
 
 /* MEDIA QUERIES */
-
+/*HASTA 768px */
 @media screen and (max-width: 768px) {
+    
+    .header__logo{
+        max-width: 250px;
+    }
+
     .galeria{
         grid-template-columns: 1fr 1fr;
     }
+
+    .fondo--rojo{
+        background-color: red;
+    }
+
+    .header__list {
+        display: flex;
+        flex-direction: column;
+    }
+
 }
 
 /*HASTA 320px */
@@ -336,10 +384,10 @@ p{
         flex-direction: column;
     }
 
-    .header__list {
-        display: flex;
-        flex-direction: column;
+    .header__logo{
+        max-width: 200px;
     }
+
 
     .info{
         flex-direction: column;
@@ -377,5 +425,10 @@ p{
     .vertical, .movil{
         grid-column: span 2;
     }
+
+    .fondo--rojo{
+        background-color: pink;
+    }
+    
 }
 
