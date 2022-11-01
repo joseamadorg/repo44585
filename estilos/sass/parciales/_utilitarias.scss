@@ -1,0 +1,94 @@
+
+html{
+    scroll-behavior: smooth;
+}
+:root{
+   font-size: 20px; 
+}
+
+
+.btn{
+    background-color: white;
+    padding: 1rem;
+    display: inline-block;
+    margin-top: 1rem;
+    text-decoration: none;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    color: black; 
+}
+
+.btn:hover{
+    background-color: blueviolet;
+}
+
+
+
+p{
+    font-family: 'Inter', sans-serif;
+}
+
+.pulsate-bck {
+	-webkit-animation: pulsate-bck 0.5s ease-in-out infinite both;
+	        animation: pulsate-bck 0.5s ease-in-out infinite both;
+}
+
+
+
+/*
+ * ----------------------------------------
+ * ANMIACIONES
+ * ----------------------------------------
+ */
+ @-webkit-keyframes pulsate-bck {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(0.9);
+              transform: scale(0.9);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes pulsate-bck {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(0.9);
+              transform: scale(0.9);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+
+
+  .carousel--alto{
+    height: 40vh;
+  }
+  
+.carousel--img{
+    height: 40vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+.info__prop{
+    background-color: black;
+    color: white; 
+    font-family: 'Inter', sans-serif;
+    padding: 1rem;
+}
+
+.container-general{
+    max-width: 1390px;
+    margin: auto;
+}
+/* FIN CLASES UTILITITARIAS*/

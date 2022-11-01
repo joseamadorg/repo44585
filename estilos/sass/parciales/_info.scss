@@ -1,0 +1,36 @@
+/*INFO SECTION*/
+
+.info {
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    overflow: hidden; 
+}
+
+.infocard {
+    color: white;
+    background-color: black;
+    padding: 1rem 2rem;
+    position: relative;
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    &__img{
+       width: 100%;
+    }
+    &__titulo {
+        position: absolute;
+        top: 2rem;
+        right: 3rem;
+        background: black;
+        padding: 0.4rem 0.8rem;
+    }
+    &__desc {
+        margin-top: 1rem;
+    }
+}
+
+/*INFO FIN */

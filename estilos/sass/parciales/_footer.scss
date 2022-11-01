@@ -1,0 +1,24 @@
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    &__list{
+        display: flex;
+        list-style: none;
+        color: white;
+        list-style: none; 
+    }
+    &__item{ 
+        margin: 1rem;
+    }
+    &__anchor{
+        color: white; 
+        text-decoration: none;
+        font-family: 'Inter', sans-serif;
+    }
+}
+
+

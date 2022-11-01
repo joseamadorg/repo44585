@@ -11,6 +11,9 @@ font-family: 'Markazi Text', serif;
 
 }
 
+/*CLASES UTILITITARIAS*/
+
+
 html{
     scroll-behavior: smooth;
 }
@@ -18,7 +21,6 @@ html{
    font-size: 20px; 
 }
 
-/*CLASES UTILITITARIAS*/
 
 .btn{
     background-color: white;

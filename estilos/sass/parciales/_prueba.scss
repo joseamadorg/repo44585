@@ -1,0 +1,64 @@
+/* ESTO ES UNA PRUEBA  */
+
+
+$vista:caballo;
+
+body{
+@if $vista == desktop {
+	@media only screen and (min-width:1024px){
+		h1{font-size:64px;}
+		h3{font-size:35px;}
+		p{font-size:2rem;}
+		}
+	} @else if $vista == mobile {
+		@media only screen and (max-width:767px){
+			h1{font-size: 54px;}
+			h3{font-size:25px;}
+			p{font-size:32px;}
+		}
+	} @else {
+		h1{font-size:34px;}
+		h3{font-size:25px;}
+		p{font-size:20px;}
+	}
+} 
+
+
+
+
+
+
+
+@each $color in blue, yellow, black {
+	.#{$color}{
+	color:#{$color};
+	}
+}
+
+
+$redes: ( /*Declaramos nuestro mapa*/
+        twitter: #55acee,
+        facebook:  #3a5795,
+        send-mail: #C25E30
+); 
+/*Creamos el bucle para usar los valores del mapa*/
+@each $red, $color in $redes {
+   .btn--#{$red} {
+       background-color: $color;
+   }
+}
+
+
+
+$colores: (
+    "rojo": red,  
+    "azul": blue,  
+    "verde": green  
+); 
+
+@each $color, $valor in $colores {
+    .titulo--#{$color} {
+        color: $valor; 
+    }
+    
+}

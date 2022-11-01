@@ -1,0 +1,25 @@
+/*HERO*/
+
+.hero {
+    background-image: url("../../img/fondo_hero.jpg");
+    background-position: center bottom;
+    color: white;
+    font-size: 1rem;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2rem 1rem;
+    &__heading{
+        color: white;
+        font-family: 'Inter', sans-serif;
+        font-size: 2.9rem;
+    }
+    &__slogan{
+        font-size: 1.5rem;
+    }
+}
+/*HERO END*/
+
+

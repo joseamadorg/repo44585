@@ -1,0 +1,23 @@
+/* VIDEO */
+
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    height: 40vh;
+    overflow: hidden;
+    &__titulo {
+        position: absolute;
+        color: white;
+        font-family: 'Inter', sans-serif;
+        font-size: 2rem;
+    }
+}
+
+#background-video {
+    width: 100%;
+}
+
+/* VIDEO FIN*/

@@ -1,2 +1,272 @@
-h1 {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth; }
+
+:root {
+  font-size: 20px; }
+
+.btn {
+  background-color: white;
+  padding: 1rem;
+  display: inline-block;
+  margin-top: 1rem;
+  text-decoration: none;
+  font-weight: 700;
+  font-family: 'Inter', sans-serif;
+  color: black; }
+
+.btn:hover {
+  background-color: blueviolet; }
+
+p {
+  font-family: 'Inter', sans-serif; }
+
+.pulsate-bck {
+  -webkit-animation: pulsate-bck 0.5s ease-in-out infinite both;
+  animation: pulsate-bck 0.5s ease-in-out infinite both; }
+
+/*
+ * ----------------------------------------
+ * ANMIACIONES
+ * ----------------------------------------
+ */
+@-webkit-keyframes pulsate-bck {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  50% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
+@keyframes pulsate-bck {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  50% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
+.carousel--alto {
+  height: 40vh; }
+
+.carousel--img {
+  height: 40vh;
+  object-fit: cover;
+  object-position: center; }
+
+.info__prop {
+  background-color: black;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  padding: 1rem; }
+
+.container-general {
+  max-width: 1390px;
+  margin: auto; }
+
+/* FIN CLASES UTILITITARIAS*/
+/* HEADER */
+.header {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem; }
+  .header__logo {
+    max-width: 251px;
+    filter: invert(1); }
+  .header__item {
+    display: inline-block;
+    padding: 5px 0.1rem;
+    border-bottom: solid 2px white; }
+  .header__anchor {
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white; }
+  .header__anchor--activo {
+    color: yellow; }
+
+.header--nosotros {
+  background-color: yellowgreen; }
+
+/*HEADER FIN */
+/*HERO*/
+.hero {
+  background-image: url("../../img/fondo_hero.jpg");
+  background-position: center bottom;
+  color: white;
+  font-size: 1rem;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2rem 1rem; }
+  .hero__heading {
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 2.9rem; }
+  .hero__slogan {
+    font-size: 1.5rem; }
+
+/*HERO END*/
+/*INFO SECTION*/
+.info {
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  overflow: hidden; }
+
+.infocard {
+  color: white;
+  background-color: black;
+  padding: 1rem 2rem;
+  position: relative;
+  flex-basis: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start; }
+  .infocard__img {
+    width: 100%; }
+  .infocard__titulo {
+    position: absolute;
+    top: 2rem;
+    right: 3rem;
+    background: black;
+    padding: 0.4rem 0.8rem; }
+  .infocard__desc {
+    margin-top: 1rem; }
+
+/*INFO FIN */
+/* VIDEO */
+.video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  height: 40vh;
+  overflow: hidden; }
+  .video__titulo {
+    position: absolute;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 2rem; }
+
+#background-video {
+  width: 100%; }
+
+/* VIDEO FIN*/
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: black; }
+  .footer__list {
+    display: flex;
+    list-style: none;
+    color: white;
+    list-style: none; }
+  .footer__item {
+    margin: 1rem; }
+  .footer__anchor {
+    color: white;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif; }
+
+/* MEDIA QUERIES */
+/*HASTA 768px */
+@media screen and (max-width: 768px) {
+  .header__logo {
+    max-width: 250px; }
+  .galeria {
+    grid-template-columns: 1fr 1fr; }
+  .fondo--rojo {
+    background-color: red; }
+  .header__list {
+    display: flex;
+    flex-direction: column; } }
+
+/*HASTA 320px */
+@media screen and (max-width: 320px) {
+  .header {
+    flex-direction: column; }
+  .header__logo {
+    max-width: 200px; }
+  .info {
+    flex-direction: column; }
+  .hero__heading {
+    font-size: 2.2rem;
+    text-align: center; }
+  .hero__slogan {
+    text-align: center; }
+  .hero__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .block {
+    grid-template-columns: 1fr;
+    padding: 0px; }
+  .block__wrapper {
+    padding: 1rem;
+    margin-top: 1rem; }
+  .galeria {
+    grid-template-columns: 1fr; }
+  .vertical, .movil {
+    grid-column: span 2; }
+  .fondo--rojo {
+    background-color: pink; } }
+
+/* ESTO ES UNA PRUEBA  */
+body h1 {
+  font-size: 34px; }
+
+body h3 {
+  font-size: 25px; }
+
+body p {
+  font-size: 20px; }
+
+.blue {
+  color: blue; }
+
+.yellow {
+  color: yellow; }
+
+.black {
+  color: black; }
+
+/*Creamos el bucle para usar los valores del mapa*/
+.btn--twitter {
+  background-color: #55acee; }
+
+.btn--facebook {
+  background-color: #3a5795; }
+
+.btn--send-mail {
+  background-color: #C25E30; }
+
+.titulo--rojo {
   color: red; }
+
+.titulo--azul {
+  color: blue; }
+
+.titulo--verde {
+  color: green; }

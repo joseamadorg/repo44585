@@ -1,0 +1,38 @@
+/* HEADER */
+
+.header{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    &__logo {
+        max-width: 251px;
+        filter: invert(1);
+    }
+    &__item {
+        display: inline-block;
+        padding: 5px 0.1rem;
+        border-bottom: solid 2px white;
+    }
+    &__anchor {
+        text-decoration: none;
+        font-family: 'Inter', sans-serif;
+        font-size: 1rem;
+        font-weight: bold;
+        color: white;
+    }
+    &__anchor--activo {
+        color: yellow;
+    }
+}
+
+
+
+
+
+.header--nosotros{
+    background-color: yellowgreen;
+}
+
+/*HEADER FIN */
